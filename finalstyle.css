@@ -60,6 +60,7 @@ footer {
 /*header nav*/
 /* 可用google font 尋找喜歡的瀏覽器字體 https://fonts.google.com/ */
 
+
 nav{
    float: right;
    font-size: 15px;
@@ -342,8 +343,6 @@ main .view-first img {
    transition-delay: 0.2s;
 }
         
-
-
 
 
 
