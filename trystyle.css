@@ -1,0 +1,640 @@
+body {
+    margin: 0px 0px;
+    margin-top: 30px;
+    font-family: Arial, '微軟正黑體', sans-serif;
+    
+}
+
+
+
+
+
+
+
+
+header {
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color:  #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*細節設計*/
+
+
+#banner{
+   float: left;
+}
+
+#banner h1 {
+   margin:0;
+}
+
+
+#banner img{
+   vertical-align: bottom;
+   width: 332px;
+}
+
+
+/*header nav*/
+/* 可用google font 尋找喜歡的瀏覽器字體 https://fonts.google.com/ */
+
+/*
+nav{
+   float: right;
+   font-size: 15px;
+   font-family: 'STHeiti', sans-serif;
+   padding-top: 30px;
+}
+
+
+nav ul {
+   margin: 0;
+   padding: 0;
+}
+
+
+
+
+
+nav li{
+   list-style-type: none;
+
+}
+
+
+
+nav li a {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: solid 3px transparent;
+    color: #000000;
+}
+
+nav li a {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: solid 3px transparent;
+    color: #000000;
+}
+
+*/
+
+
+
+
+
+
+
+
+main .view-first img {
+    float: left;
+    vertical-align: bottom;
+    width: 450px;
+}
+
+
+
+main{
+  background-color:  #009FCC;
+  margin-bottom: 0px;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+.blank{
+    max-width: 100%;
+    height:10px;
+    background-color: #4682B4;
+}
+
+
+
+div.newvideo{
+  max-width: 100%;
+  height:auto;
+  background-color: #ffffff;
+
+
+}
+
+
+div.newvideo .wordsbox{
+  max-width: 100%;
+  height:auto;
+  position: relative;
+  top: 20px;
+
+}
+
+
+
+div.newvideo h2{
+  color: #696969;
+  position: relative;
+  margin-left: 50px;
+  font-family: 'cwTeXYen', sans-serif;
+  font-weight:bold;
+  font-size: 26px;
+}
+
+
+div.newvideo  p{
+  color: #696969;
+  position: relative;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-family: 'cwTeXYen', sans-serif;
+  font-size: 16px;
+}
+
+
+div.newvideo video{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 0px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+  margin-left: 5%;
+
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+  max-width: 100%;
+}
+
+
+
+
+
+
+/*  HEADERPOST LEAD
+
+#topnews #lead {
+    float: left;
+    width: 300px;
+    color: #ffffff;
+    margin-left: 25px;
+}
+
+#topnews h2 {
+    margin: 20px 0;
+}
+
+#topnews .more {
+    font-size: 18px;
+    font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+    text-align: right;
+}
+
+
+
+/* 用CSS寫按鈕!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了
+
+#topnews .more a {
+    color: #ffffff;
+    background-image: url(img/more.png);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+    padding: 10px 40px 10px 0;
+    text-decoration: none;
+}
+
+
+
+/* 用CSS做漸層!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了
+
+#topnews {
+    background-color: #333333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#CC6600), to(#FFFFFF));
+    background: -webkit-linear-gradient(#CC6600 0%, #FFFFFF 100%);
+    background: -moz-linear-gradient(#CC6600 0%, #FFFFFF 100%);
+    background: -o-linear-gradient(#CC6600 0%, #FFFFFF 100%);
+    background: -ms-linear-gradient(#CC6600 0%, #FFFFFF 100%);
+    background: linear-gradient(#CC6600 0%, #FFFFFF 100%);
+    overflow: hidden;
+}
+
+*/
+
+
+
+
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center;
+    display:block;
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 200PX;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+.view h2 {
+
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size:  16px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0px 0 0 0
+}
+.view p {
+    font-family:  Arial, '微軟正黑體', sans-serif;
+    /*font-style: italic;*/ 
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+/*
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}*/
+
+
+
+/*
+
+.view-first img {
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+.view-first .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background-color: rgba(255,136,136, 0.7);
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+   -webkit-transform: translateY(-100px);
+   -moz-transform: translateY(-100px);
+   -o-transform: translateY(-100px);
+   -ms-transform: translateY(-100px);
+   transform: translateY(-100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-first p {
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+.view-first:hover img {
+   -webkit-transform: scale(1.1,1.1);
+   -moz-transform: scale(1.1,1.1);
+   -o-transform: scale(1.1,1.1);
+   -ms-transform: scale(1.1,1.1);
+   transform: scale(1.1,1.1);
+}
+/*
+.view-first a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+}
+.view-first:hover p {
+   -webkit-transition-delay: 0.1s;
+   -moz-transition-delay: 0.1s;
+   -o-transition-delay: 0.1s;
+   -ms-transition-delay: 0.1s;
+   transition-delay: 0.1s;
+}
+/*.view-first:hover a.info {
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}*/
+        
+
+
+
+
+
+
+
+
+
+
+
+.view{
+  margin-bottom: 50px;
+
+}
+
+
+
+
+.view .play{
+  position: absolute;
+  left:0;
+  top: 0;
+  z-index: 50;
+}
+
+
+
+
+
+
+
+
+
+/* ### FOOTER ###*/
+
+footer{
+  background-color:  #4682B4;
+  margin-bottom: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 160px;
+
+}
+
+
+
+
+
+
+
+footer {
+    
+    padding: 5px;
+}
+
+
+
+#iconmenu {
+    float: left;
+}
+
+#iconmenu ul {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 3px 0 0;
+}
+
+#iconmenu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+#iconmenu img {
+    border: none;
+    width: 25px;
+}
+
+
+
+
+#submenu {
+    clear: both;
+    font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+    font-size: 12px;
+    overflow: hidden;
+    float: left;
+
+}
+/*
+#submenu ul {
+    margin: 3px;
+    padding: 0;
+}
+
+#submenu li {
+    list-style-type: none;
+    float: left;
+}
+
+#submenu li a {
+    display: block;
+    width: auto;
+    border-right: solid 1px #ffffff;
+    text-align: center;
+    text-decoration: none;
+    color: #99FF99;
+    font-weight: bold;
+    padding-right: 6px;
+    margin-right: 3px;
+}
+
+#submenu li:last-child a {
+    border: none;
+}
+
+#submenu li+li+li a {
+    border: none;
+}
+*/
+
+#submenu{
+    font-size: 12px;
+    display: block;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 50px;
+
+}
+
+#submenu a{
+  color: #FFC0CB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:   #7AB8CC ;
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'cwTeXYen', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color:   #7AB8CC ;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: fixed;
+    display: inline-block;
+    float: right;
+    right: 0;
+    top: 150px;
+    z-index: 50;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+

@@ -15,96 +15,163 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="finalstyle.css">
 
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/jquery-3.2.1.min.js">
+    <link rel="stylesheet" type="text/javascript" href="https://code.jquery.com/jquery-3.2.1.js">
+
+    <link rel="stylesheet" href="trystyle.css">
+
+
+
+
+    <link rel="stylesheet" type="text/javascript" href="js/bootstrap.bundle.js">
+    <link rel="stylesheet" type="text/javascript" href="js/bootstrap.bundle.min.js"> 
+    <link rel="stylesheet" type="text/javascript" href="js/bootstrap.min.js">
+    <link rel="stylesheet" type="text/javascript" href="js/bootstrap.js">
+    <link rel="stylesheet" type="text/javascript" href="js/jquery-3.2.1.min.js">
+    <link rel="stylesheet" type="text/javascript" href="js/intro.js">
 </head>
 
 
-
 <body>
-      <div class="container-fluid">
+      
 
-		<header>
-			<div id="banner">
-				<h1><img src="img/logo截圖.png" alt="logo截圖"></h1>
-			</div>
-            <nav class="navbar navbar-expand-lg navbar-light background-color: 
-#FFFFFF;">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="#">影音作品 <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">幕後花絮</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">關於我們</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <header>
+            <div id="banner">
+                <h1><img src="img/logo截圖.png" alt="logo截圖"></h1>
+            </div>
 
-		</header>	
+
+
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">了解更多</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="https://yuhsin3423.github.io/final23/">影音作品</a>
+                <a href="https://yuhsin3423.github.io/behindscene/">幕後花絮</a>
+                <a href="https://yuhsin3423.github.io/aboutus/">關於我們</a>
+              </div>
+            </div>
+
+
+            <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+
+
+
+
+
+
+
+        </header>   
 
 
 <main>
 
-<section class="rely_1">
-                <div class="view view-first">
-                    <img src="img/2017/IMG_4621.JPG" alt="手機">>
-                    <div class="mask">
-                        <h2>用眼過度病</h2>
-                        <p>人們過度使用手機，同一時間往往在小小的螢幕上做好多事</p>
-                        <a href="https://drive.google.com/file/d/1IWWy2zI2biYDGcSs5uVN1uw3OESrAGBA/view?usp=sharing" class="info" target="apple">Watch Video</a>
-                    </div>
-                </div> 
 
+
+                <div class="newvideo">
+                    
+                    <video src="video/aircondition.mp4" type="video/mp4" controls="controls" loop="loop" autoplay="true"></video>
+                    
+                    <div class="wordsbox">
+                        <h2>最新影片-用電過度病</h2>
+                        <p>擁有能夠控制舒適溫度的機器之後，在炎熱的夏天往往不斷調低溫度，最後竟然...</p>
+                    </div>
+                    <div class="blank"></div>
+                </div>
+
+                
+
+
+
+
+
+<div class="container">
+
+
+                <a href="https://drive.google.com/file/d/1IWWy2zI2biYDGcSs5uVN1uw3OESrAGBA/view?usp=sharing" class="info" target="apple">
+                    <div class="view view-first">
+                        <img src="img/2017/IMG_4621.JPG" alt="手機">
+                        <div class="mask">
+                            <h2>用眼過度病</h2>
+                        </div>
+                    </div>
+                </a>
+
+
+
+
+
+            <a href="https://drive.google.com/open?id=1BXovkm1UaKzUmp_S3m0LahaUuqWh5hMo" class="info" target="apple">
                 <div class="view view-first">
                     <img src="img/2017/IMG_0008.jpg" alt="加工食品">
                     <div class="mask">
                         <h2>過多加工食品病</h2>
-                        <p>我們常常喝現成的飲料，但架上的飲料來源卻都不知道</p>
-                        <a href="https://drive.google.com/open?id=1BXovkm1UaKzUmp_S3m0LahaUuqWh5hMo" class="info" target="apple">Watch Video</a>
+                        
                     </div>
-                </div>  
+                </div> 
+            </a> 
 
+
+            <a href="https://drive.google.com/open?id=1s3oEbYqIXRM4hCwKAtnHTB9YGJq1LC6T" class="info" target="apple">
                 <div class="view view-first">
                     <img src="img/2017/IMG_2066.jpg" alt="電梯">  
                     <div class="mask">
                         <h2>懶惰病</h2>
-                        <p>電梯是讓要往高樓層的人們搭乘，只要移動一兩樓的人們或許該自己動一動</p>
-                        <a href="https://drive.google.com/open?id=1s3oEbYqIXRM4hCwKAtnHTB9YGJq1LC6T" class="info" target="apple">Watch Video</a>
                     </div>
-                </div>  
-                
+                </div>
+            </a>
+
+            <a href="https://drive.google.com/open?id=126ax84srOgcLq3NsXDhnh8UM4IRsEbsP" class="info" target="apple">
                 <div class="view view-first">
                     <img src="img/2017/IMG_4255.JPG" alt="電腦">
                     <div class="mask">
                         <h2>失去耐心病</h2>
-                        <p>現代人習慣凡事都快速接收，所以當網路或者機器跑不動時，更容易失去耐心</p>
-                        <a href="https://drive.google.com/open?id=126ax84srOgcLq3NsXDhnh8UM4IRsEbsP" class="info" target="apple">Watch Video</a>
+                        
                     </div>
-                </div>  
+                </div> 
+            </a>
 
-
+            <a href="https://drive.google.com/open?id=1o_ndz0NyAXFrB2drO3Saidhe_rcJ2Q2D" class="info" target="apple">
                 <div class="view view-first">
                     <img src="img/2017/IMG_2901.JPG" alt="鬧鐘">
                     <div class="mask">
-                        <h2>失去耐心病</h2>
-                        <p>現代人習慣凡事都快速接收，所以當網路或者機器跑不動時，更容易失去耐心</p>
-                        <a href="https://drive.google.com/open?id=1o_ndz0NyAXFrB2drO3Saidhe_rcJ2Q2D" class="info" target="apple">Watch Video</a>
+                        <h2>拖延病</h2>
+
                     </div>
-                </div>             
+                </div>  
+            </a>           
 
-
+            <a href="https://drive.google.com/open?id=1Lr6OxHKXpH4_-d4bkd53jJAGHMUFcR6c" class="info" target="apple">
                 <div class="view view-first">
                     <img src="img/2017/IMG_3425.JPG" alt="購物成癮">
                     <div class="mask">
                         <h2>購物成癮病</h2>
-                        <p>現代方便的科技使我們隨時隨地都能逛街、買東西，買著買著心情愉悅加上沒有時間地點的限制，慢慢的越買越多...
-                        </p>
-                        <a href="https://drive.google.com/open?id=1Lr6OxHKXpH4_-d4bkd53jJAGHMUFcR6c" class="info" target="apple">Watch Video</a>
+                        
                     </div>
                 </div> 
+            </a>
+
 
 
 
@@ -112,10 +179,7 @@
 
 
 
-           
-
-</section>
-
+</div>
 </main>
 
 
@@ -124,33 +188,28 @@
 
 
 <footer>
-    	<p>YUHSIN</p>
-    	<div id="iconmenu">
-    		<ul>
-    			<li><a href="#"><img src="img/icon/Email.svg" alt="Email"></a></li>
-    			<li><a href="#"><img src="img/icon/Facebook.svg" alt="Facebook"></a></li>
-    			<li><a href="#"><img src="img/icon/YouTube.svg" alt="YouTube"></a></li>
-    		</ul>
-    	</div>
+        
+        <div id="iconmenu">
+            <ul>
+                <li><a href="mailto:relypaper2018@gmail.com"><img src="img/icon/Email.svg" alt="Email"></a></li>
+                <li><a href="#"><img src="img/icon/Facebook.svg" alt="Facebook"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCjsDnuE63qhb6qho4w0Tsgw"><img src="img/icon/YouTube.svg" alt="YouTube"></a></li>
+            </ul>
+        </div>
 
+      
 
-    	<div id="submenu">
-    		<ul>
-    			<li><a href="#">Privacy Policy</a></li>
-    			<li><a href="#">Terms of Use</a></li>
-    			<li><a href="#">Contact</a></li>
-    		</ul>
-    	</div>
-    	<small>Copyright © YUHSIN, all rights reserved.</small>
+        <div id="submenu">
+        Copyright © 2018   |   <strong class="darker">紙の動畫工作室 Paper Animation Studio</strong>   |   
+                    <a href="*">  CONTACT</a>
+        </div>
+
     </footer>
-    </div>
+
   
 
-<script src="js/bootstrap.bundle.js"></script> 
-<script src="js/bootstrap.bundle.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/bootstrap.js"></script> 
-<script src="js/jquery-3.2.1.min.js"></script>
+
+
 
 
 
